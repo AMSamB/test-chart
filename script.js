@@ -111,8 +111,7 @@ $(document).ready(function() {
               }
             }
           }],
-          yAxes: [{
-	    type: 'percentage',	  
+          yAxes: [{  
             stacked: STACKED,
             beginAtZero: true,
             scaleLabel: {
