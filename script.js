@@ -1,38 +1,53 @@
 $(document).ready(function() {
 
-  var TITLE = 'English Learners by Select School Districts in CT, 2018-19';
+  var TITLE = 'Test chart, location, 2Q 2019–1Q 2021';
 
   // `false` for vertical column chart, `true` for horizontal bar chart
   var HORIZONTAL = false;
 
 	// `false` for individual bars, `true` for stacked bars
-  var STACKED = false;  
+  var STACKED = true;  
   
   // Which column defines 'bucket' names?
-  var LABELS = 'district';  
+  var LABELS = 'quarter';  
 
   // For each column representing a data series, define its name and color
   var SERIES = [  
     {
-      column: 'nonlearner',
-      name: 'Non-Learners',
+      column: 'op A',
+      name: 'Op A',
       color: 'grey'
     },
     {
-      column: 'learner',
-      name: 'Learners',
+      column: 'op B',
+      name: 'Op B',
       color: 'blue'
+    },
+    {
+      column: 'op C',
+      name: 'Op C',
+      color: 'red'
+    },
+    {
+      column: 'op D',
+      name: 'Op D',
+      color: 'green'
+    },
+    {
+      column: 'op E',
+      name: 'Op E',
+      color: 'yellow'
     }
   ];
 
   // x-axis label and label in tooltip
-  var X_AXIS = 'School Districts';
+  //var X_AXIS = 'School Districts';
 
   // y-axis label, label in tooltip
-  var Y_AXIS = 'Number of Enrolled Students';
+  var Y_AXIS = 'Share';
 
   // `true` to show the grid, `false` to hide
-  var SHOW_GRID = true; 
+  var SHOW_GRID = false; 
 
   // `true` to show the legend, `false` to hide
   var SHOW_LEGEND = true; 
