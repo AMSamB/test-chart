@@ -118,7 +118,7 @@ $(document).ready(function() {
               display: Y_AXIS !== '',
               labelString: Y_AXIS
             },
-	    max: 1,
+	    max: 100%,
             gridLines: {
               display: SHOW_GRID,
             },
