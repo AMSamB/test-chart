@@ -41,7 +41,7 @@ $(document).ready(function() {
   ];
 
   // x-axis label and label in tooltip
-  //var X_AXIS = 'School Districts';
+  var X_AXIS = 'School Districts';
 
   // y-axis label, label in tooltip
   var Y_AXIS = 'Share';
