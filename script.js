@@ -16,32 +16,32 @@ $(document).ready(function() {
     {
       column: 'op A',
       name: 'Op A',
-      color: 'grey'
+      color: '#29AEFF'
     },
     {
       column: 'op B',
       name: 'Op B',
-      color: 'blue'
+      color: '#D63EAE'
     },
     {
       column: 'op C',
       name: 'Op C',
-      color: 'red'
+      color: '#221F72'
     },
     {
       column: 'op D',
       name: 'Op D',
-      color: 'green'
+      color: '#F25C5C'
     },
     {
       column: 'op E',
       name: 'Op E',
-      color: 'yellow'
+      color: '#5F6D21'
     }
   ];
 
   // x-axis label and label in tooltip
-  var X_AXIS = 'School Districts';
+  //var X_AXIS = 'School Districts';
 
   // y-axis label, label in tooltip
   var Y_AXIS = 'Share';
@@ -92,6 +92,7 @@ $(document).ready(function() {
         },
         legend: {
           display: SHOW_LEGEND,
+	  position: 'bottom',
         },
         scales: {
           xAxes: [{
