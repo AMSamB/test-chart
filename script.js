@@ -134,7 +134,7 @@ $(document).ready(function() {
           callbacks: {
             label: function(tooltipItem, all) {
               return all.datasets[tooltipItem.datasetIndex].label
-                + ': ' + tooltipItem.yLabel.toLocaleString('de-DE', {style:'percent'});
+                + ': ' + tooltipItem.yLabel.toLocaleString({style:'percent'});
             }
           }
         }
