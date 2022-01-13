@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  //var TITLE = 'Test chart, location, 2Q 2019–1Q 2021';
+  var TITLE = '';
 
   // `false` for vertical column chart, `true` for horizontal bar chart
   var HORIZONTAL = false;
