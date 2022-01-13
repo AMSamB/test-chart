@@ -41,7 +41,7 @@ $(document).ready(function() {
   ];
 
   // x-axis label and label in tooltip
-  var X_AXIS = '';
+  var X_AXIS = 'Test';
 
   // y-axis label, label in tooltip
   var Y_AXIS = 'Share';
@@ -97,9 +97,9 @@ $(document).ready(function() {
         scales: {
           xAxes: [{
             stacked: STACKED,
-            //scaleLabel: {
-              //display: X_AXIS !== '',
-             // labelString: X_AXIS
+            scaleLabel: {
+              display: X_AXIS !== '',
+              labelString: X_AXIS
             },
             gridLines: {
               display: SHOW_GRID,
