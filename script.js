@@ -124,7 +124,7 @@ $(document).ready(function() {
             ticks: {
               beginAtZero: true,
               callback: function(value, index, values) {
-                return value.toLocaleString('de-DE', {style:'percent'})
+                return value.toLocaleString('en-EN', {style:'percent'})
               }
             }
           }]
@@ -134,7 +134,7 @@ $(document).ready(function() {
           callbacks: {
             label: function(tooltipItem, all) {
               return all.datasets[tooltipItem.datasetIndex].label
-                + ': ' + tooltipItem.yLabel.toLocaleString({style:'percent'});
+                + ': ' + tooltipItem.yLabel.toLocaleString('en-EN', {style:'percent'});
             }
           }
         }
