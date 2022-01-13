@@ -112,6 +112,7 @@ $(document).ready(function() {
             }
           }],
           yAxes: [{
+	    type: 'percentage',	  
             stacked: STACKED,
             beginAtZero: true,
             scaleLabel: {
