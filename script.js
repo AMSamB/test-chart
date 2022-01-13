@@ -118,7 +118,6 @@ $(document).ready(function() {
               display: Y_AXIS !== '',
               labelString: Y_AXIS
             },
-	    max: 100,
             gridLines: {
               display: SHOW_GRID,
             },
@@ -135,7 +134,7 @@ $(document).ready(function() {
           callbacks: {
             label: function(tooltipItem, all) {
               return all.datasets[tooltipItem.datasetIndex].label
-                + ': ' + tooltipItem.yLabel.toLocaleString();
+                + ': ' + tooltipItem.yLabel.toLocaleString('de-DE', {style:'percent'});
             }
           }
         }
