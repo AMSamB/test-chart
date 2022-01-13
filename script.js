@@ -125,7 +125,7 @@ $(document).ready(function() {
             ticks: {
               beginAtZero: true,
               callback: function(value, index, values) {
-                return value.toLocaleString()
+                return value.toLocaleString('de-DE', {style:'percent'})
               }
             }
           }]
